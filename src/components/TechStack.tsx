@@ -1,27 +1,27 @@
 const categories = [
   {
-    name: "Data Processing",
-    items: ["Apache Spark", "Apache Flink", "dbt", "Apache Beam"],
+    name: "Data Engineering",
+    items: ["SnapLogic", "PySpark", "Delta Lake", "Medallion Architecture", "Auto Loader"],
   },
   {
     name: "Storage & Compute",
-    items: ["Snowflake", "Databricks", "BigQuery", "Redshift"],
+    items: ["Snowflake", "Databricks", "Microsoft Fabric", "Azure"],
   },
   {
-    name: "Streaming",
-    items: ["Apache Kafka", "Confluent", "Kinesis", "Pulsar"],
+    name: "Business Intelligence",
+    items: ["Power BI", "DAX", "Power Query (M)", "Tableau", "Power BI Embedded"],
   },
   {
-    name: "Orchestration",
-    items: ["Airflow", "Dagster", "Prefect", "Step Functions"],
+    name: "Source Systems",
+    items: ["MySQL", "MS SQL Server", "Flat Files (CSV/Excel)", "Snowflake Cross-Region"],
   },
   {
-    name: "Infrastructure",
-    items: ["Terraform", "Kubernetes", "Docker", "AWS/GCP/Azure"],
+    name: "Governance & Security",
+    items: ["Row-Level Security (RLS)", "Unity Catalog", "GSI Data Lake", "OLS", "Azure AD"],
   },
   {
-    name: "Governance",
-    items: ["DataHub", "Unity Catalog", "Apache Atlas", "Great Expectations"],
+    name: "Delivery",
+    items: ["Azure DevOps", "CI/CD", "Agile/Scrum", "Git", "Star Schema"],
   },
 ];
 
@@ -33,7 +33,7 @@ const TechStack = () => {
           <p className="text-sm font-mono text-primary mb-3 tracking-wider uppercase">Tools</p>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Technical Stack</h2>
           <p className="text-muted-foreground text-lg max-w-xl">
-            Platform-agnostic expertise across the modern data ecosystem.
+            Enterprise-grade expertise across the modern data platform ecosystem.
           </p>
         </div>
 

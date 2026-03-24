@@ -29,7 +29,7 @@ const Hero = () => {
         </p>
 
         <p className="text-sm text-muted-foreground font-mono mb-10 fade-up fade-up-delay-3">
-          15+ years · Fortune 500 · Petabyte-scale systems
+          10+ years · Caterpillar USA · Snowflake · Databricks · Power BI
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 fade-up fade-up-delay-4">

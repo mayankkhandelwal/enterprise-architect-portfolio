@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -8,23 +8,35 @@ const Contact = () => {
         <p className="text-sm font-mono text-primary mb-3 tracking-wider uppercase">Connect</p>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Let's Build Something</h2>
         <p className="text-muted-foreground text-lg mb-10 max-w-lg mx-auto">
-          Whether you're modernizing a legacy platform or building from scratch — I'd love to hear about your data challenges.
+          Available from April 2026. Whether you're modernizing a legacy platform or building from scratch — I'd love to hear about your data challenges.
         </p>
 
         <a
-          href="mailto:hello@dataarchitect.dev"
+          href="mailto:mayankkhandelwal08@gmail.com"
           className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/20 mb-10"
         >
           <Mail className="w-4 h-4" />
-          hello@dataarchitect.dev
+          mayankkhandelwal08@gmail.com
         </a>
 
         <div className="flex items-center justify-center gap-6 text-muted-foreground">
-          <a href="#" className="hover:text-primary transition-colors" aria-label="LinkedIn">
+          <a
+            href="https://linkedin.com/in/mayank-khandelwal-30953858"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors flex items-center gap-2 text-sm"
+            aria-label="LinkedIn"
+          >
             <Linkedin className="w-5 h-5" />
+            LinkedIn
           </a>
-          <a href="#" className="hover:text-primary transition-colors" aria-label="GitHub">
-            <Github className="w-5 h-5" />
+          <a
+            href="tel:+919977791323"
+            className="hover:text-primary transition-colors flex items-center gap-2 text-sm"
+            aria-label="Phone"
+          >
+            <Phone className="w-5 h-5" />
+            +91 9977791323
           </a>
         </div>
       </div>

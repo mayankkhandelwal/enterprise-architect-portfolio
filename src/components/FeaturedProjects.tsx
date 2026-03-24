@@ -2,37 +2,37 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Global Retail Data Lakehouse",
-    client: "Fortune 100 Retailer",
-    description: "Unified 12 regional data warehouses into a single Lakehouse architecture on Databricks + Delta Lake, enabling cross-market analytics.",
+    title: "Enterprise Analytics Platform — Caterpillar USA",
+    client: "Caterpillar USA · Service Distribution & Digital (SD&D)",
+    description: "Owned end-to-end analytics platform architecture supporting 5 business programs (PEP, DEP, MSEP, REP, SEP). Designed SnapLogic pipelines from MySQL, MS SQL Server, Snowflake cross-region (East-1→East-2), and flat files into a unified Snowflake platform. Built Snowflake database from scratch with multi-layered view architecture as the semantic layer for all BI workloads.",
     metrics: [
-      { value: "4.2PB", label: "Data Unified" },
-      { value: "73%", label: "Cost Reduction" },
-      { value: "12→1", label: "Platforms Consolidated" },
+      { value: "35%", label: "Cost Reduction" },
+      { value: "400+", label: "Users Governed" },
+      { value: "5", label: "Programs Unified" },
     ],
-    tags: ["Databricks", "Delta Lake", "Terraform", "Kafka"],
+    tags: ["Snowflake", "SnapLogic", "Power BI", "Databricks", "PySpark"],
   },
   {
-    title: "Real-Time Fraud Detection Pipeline",
-    client: "Top 10 US Bank",
-    description: "Designed a streaming architecture processing 2M+ events/sec with sub-200ms latency for real-time fraud scoring.",
+    title: "Dynamic RLS & Power BI App — Dealer Analytics",
+    client: "Caterpillar USA · SD&D",
+    description: "Designed dynamic Row-Level Security (RLS) using GSI Data Lake views and CWS ID-based group access. Built and published a Power BI App with role-secured workspaces for 256 internal CAT users and 183 external dealer partners — zero dataset duplication, fully compliant with least-privilege principles.",
     metrics: [
-      { value: "2M+", label: "Events/Second" },
-      { value: "<200ms", label: "P99 Latency" },
-      { value: "40%", label: "Fraud Caught ↑" },
+      { value: "256", label: "Internal Users" },
+      { value: "183", label: "Dealer Partners" },
+      { value: "0", label: "Dataset Duplications" },
     ],
-    tags: ["Apache Flink", "Kafka", "Kubernetes", "Python"],
+    tags: ["Power BI", "Row-Level Security", "Snowflake", "GSI Data Lake"],
   },
   {
-    title: "Enterprise Data Mesh Implementation",
-    client: "Global Pharma Company",
-    description: "Led the organizational and technical transformation to a data mesh architecture across 8 business domains.",
+    title: "Enterprise Data Warehouse — Marathon Insurance",
+    client: "Marathon Insurance · Jamaica",
+    description: "Architected centralized enterprise data warehouse consolidating multi-source operational systems (Epic SQL, Vision SQL, Freshdesk) using Azure Data Factory and Snowflake. Implemented enterprise-wide RLS governance supporting 500+ users across insurance operations.",
     metrics: [
-      { value: "8", label: "Domains Onboarded" },
-      { value: "60%", label: "Faster Delivery" },
-      { value: "200+", label: "Data Products" },
+      { value: "500+", label: "Users Supported" },
+      { value: "95%", label: "Access Incidents ↓" },
+      { value: "20%", label: "Report Latency ↓" },
     ],
-    tags: ["Snowflake", "dbt", "Airflow", "DataHub"],
+    tags: ["Snowflake", "Azure Data Factory", "Power BI", "RLS"],
   },
 ];
 
@@ -79,7 +79,6 @@ const FeaturedProjects = () => {
                   {project.description}
                 </p>
 
-                {/* Metrics */}
                 <div className="grid grid-cols-3 gap-4 pt-6 border-t border-border">
                   {project.metrics.map((m) => (
                     <div key={m.label}>
